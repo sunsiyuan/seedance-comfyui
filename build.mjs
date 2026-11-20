@@ -72,6 +72,7 @@ Paid per second of video from your HaryAI balance: Seedance 2.5 at 720p is $${fu
 
 - [seedance-2.5-api](https://github.com/sunsiyuan/seedance-2.5-api): the API, curl examples, Q&A
 - [seedance-skill](https://github.com/sunsiyuan/seedance-skill): Seedance 2.5 as a Claude Code and Codex skill
+- [n8n-nodes-haryai](https://github.com/sunsiyuan/n8n-nodes-haryai): the same in n8n (npm \`n8n-nodes-haryai\`)
 - API reference: [docs/video.md](https://haryai.com/docs/video.md)
 
 MIT. Prices as of ${today}.
@@ -137,6 +138,7 @@ python main.py
 
 - [seedance-2.5-api](https://github.com/sunsiyuan/seedance-2.5-api)：接口本身、curl 示例和常见问题
 - [seedance-skill](https://github.com/sunsiyuan/seedance-skill)：Claude Code 和 Codex 用的 Seedance 2.5 skill
+- [n8n-nodes-haryai](https://github.com/sunsiyuan/n8n-nodes-haryai)：在 n8n 里用（npm 包 \`n8n-nodes-haryai\`）
 - 接口文档：[docs/video.md](https://haryai.com/docs/video.md)
 
 MIT 许可。价格截至 ${today}。
