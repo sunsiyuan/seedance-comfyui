@@ -10,6 +10,6 @@ Repository = "https://github.com/sunsiyuan/seedance-comfyui"
 Documentation = "https://haryai.com/en/seedance-2-5-comfyui?utm_source=comfy-registry&utm_medium=listing&utm_campaign=seedance-comfyui"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "haryai"
 DisplayName = "Seedance 2.5 (HaryAI)"
 Icon = ""

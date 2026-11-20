@@ -1,0 +1,17 @@
+name: Publish to Comfy Registry
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [pyproject.toml]
+permissions:
+  issues: write
+jobs:
+  publish:
+    if: github.repository_owner == 'sunsiyuan'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Comfy-Org/publish-node-action@v1
+        with:
+          personal_access_token: ${{ secrets.REGISTRY_ACCESS_TOKEN }}
