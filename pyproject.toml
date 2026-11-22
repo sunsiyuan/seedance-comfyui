@@ -1,7 +1,7 @@
 [project]
 name = "seedance-comfyui"
 description = "Seedance 2.5 and Seedance 2.5 Flash in ComfyUI through HaryAI: text to video, first and last frame, reference images, sound. No BytePlus account needed."
-version = "0.1.0"
+version = "0.2.0"
 license = { file = "LICENSE" }
 dependencies = []
 

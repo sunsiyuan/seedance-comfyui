@@ -18,11 +18,15 @@ from PIL import Image
 import folder_paths
 
 BASE = os.environ.get("HARYAI_BASE_URL", "https://api.haryai.com/api/v3").rstrip("/")
+# The -unlock names are the same models with fewer content limits, at a higher
+# price (https://haryai.com/en/seedance-api-pricing).
 MODELS = {
     "Seedance 2.5": "dreamina-seedance-2-5-260628",
     "Seedance 2.5 Flash": "dreamina-seedance-2-5-flash-261115",
+    "Seedance 2.5 Unlocked (fewer content limits)": "dreamina-seedance-2-5-260628-unlock",
+    "Seedance 2.5 Flash Unlocked (fewer content limits)": "dreamina-seedance-2-5-flash-261115-unlock",
 }
-RESOLUTIONS = {"Seedance 2.5": ["480p", "720p", "1080p"], "Seedance 2.5 Flash": ["480p", "720p"]}
+RESOLUTIONS = {name: ["480p", "720p"] if "Flash" in name else ["480p", "720p", "1080p"] for name in MODELS}
 RATIOS = ["16:9", "9:16", "1:1", "4:3", "3:4", "21:9"]
 
 
