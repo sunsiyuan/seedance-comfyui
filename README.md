@@ -59,6 +59,7 @@ Paid per second of video from your HaryAI balance: Seedance 2.5 at 720p is $0.20
 - [seedance-2.5-api](https://github.com/sunsiyuan/seedance-2.5-api): the API, curl examples, Q&A
 - [seedance-skill](https://github.com/sunsiyuan/seedance-skill): Seedance 2.5 as a Claude Code and Codex skill
 - [n8n-nodes-haryai](https://github.com/sunsiyuan/n8n-nodes-haryai): the same in n8n (npm `n8n-nodes-haryai`)
+- [nano-banana-api](https://github.com/sunsiyuan/nano-banana-api): Nano Banana 2.1 and 2 through the OpenAI images API or Gemini's own format
 - API reference: [docs/video.md](https://haryai.com/docs/video.md)
 
-MIT. Prices as of 2026-11-20.
+MIT. Prices as of 2026-11-22.
