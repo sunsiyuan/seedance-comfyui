@@ -18,7 +18,7 @@ In ComfyUI Manager, search for "Seedance 2.5 (HaryAI)". Or:
 
 ```sh
 cd ComfyUI/custom_nodes
-git clone https://github.com/sunsiyuan/seedance-comfyui
+git clone https://github.com/haryai-com/seedance-comfyui
 ```
 
 No extra Python packages. Restart ComfyUI.
@@ -56,10 +56,10 @@ Paid per second of video from your HaryAI balance: Seedance 2.5 at 720p is $0.20
 
 ## Related
 
-- [seedance-2.5-api](https://github.com/sunsiyuan/seedance-2.5-api): the API, curl examples, Q&A
-- [seedance-skill](https://github.com/sunsiyuan/seedance-skill): Seedance 2.5 as a Claude Code and Codex skill
-- [n8n-nodes-haryai](https://github.com/sunsiyuan/n8n-nodes-haryai): the same in n8n (npm `n8n-nodes-haryai`)
-- [nano-banana-api](https://github.com/sunsiyuan/nano-banana-api): Nano Banana 2.1 and 2 through the OpenAI images API or Gemini's own format
+- [seedance-2.5-api](https://github.com/haryai-com/seedance-2.5-api): the API, curl examples, Q&A
+- [seedance-skill](https://github.com/haryai-com/seedance-skill): Seedance 2.5 as a Claude Code and Codex skill
+- [n8n-nodes-haryai](https://github.com/haryai-com/n8n-nodes-haryai): the same in n8n (npm `n8n-nodes-haryai`)
+- [nano-banana-api](https://github.com/haryai-com/nano-banana-api): Nano Banana 2.1 and 2 through the OpenAI images API or Gemini's own format
 - API reference: [docs/video.md](https://haryai.com/docs/video.md)
 
-MIT. Prices as of 2026-11-22.
+MIT. Prices as of 2026-11-26.

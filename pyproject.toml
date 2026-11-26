@@ -6,7 +6,7 @@ license = { file = "LICENSE" }
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/sunsiyuan/seedance-comfyui"
+Repository = "https://github.com/haryai-com/seedance-comfyui"
 Documentation = "https://haryai.com/en/seedance-2-5-comfyui?utm_source=comfy-registry&utm_medium=listing&utm_campaign=seedance-comfyui"
 
 [tool.comfy]
