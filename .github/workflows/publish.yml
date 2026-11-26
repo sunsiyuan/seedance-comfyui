@@ -8,7 +8,7 @@ permissions:
   issues: write
 jobs:
   publish:
-    if: github.repository_owner == 'sunsiyuan'
+    if: github.repository_owner == 'haryai-com'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
