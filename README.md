@@ -1,20 +1,26 @@
-# Seedance 2.5 in ComfyUI (HaryAI)
+# Seedance 2.5, Seedream and Nano Banana in ComfyUI (HaryAI)
 
 [中文](README.zh-CN.md)
 
-A ComfyUI node for Seedance 2.5 and Seedance 2.5 Flash, ByteDance's video models, through [HaryAI](https://haryai.com/en/seedance-2-5-comfyui?utm_source=github&utm_medium=readme&utm_campaign=seedance-comfyui). Seedance 2.5 costs 12% less than BytePlus's official price, needs no BytePlus account and no Comfy credits: it bills your HaryAI balance.
+ComfyUI nodes for ByteDance's Seedance 2.5 video and for Seedream 5.5 and Nano Banana images, through [HaryAI](https://haryai.com/en/seedance-2-5-comfyui?utm_source=github&utm_medium=readme&utm_campaign=seedance-comfyui). Seedance 2.5 costs 12% less than BytePlus's official price, Seedream 20% less and Nano Banana 50% less. No BytePlus or Google account and no Comfy credits: it bills your HaryAI balance.
 
-One node, **Seedance 2.5 (HaryAI)** under HaryAI/video:
+**Seedance 2.5 (HaryAI)**, under HaryAI/video:
 
 - text to video
 - image to video from a first frame, optionally with a last frame
-- up to 4 reference images that keep a character or a product
+- reference images that keep a character or a product (up to 30; Flash 10)
 - generated sound, and spoken lines with lip sync
 - outputs a standard VIDEO (connect Save Video) and the task id
 
+**Seedream / Nano Banana (HaryAI)**, under HaryAI/image:
+
+- Seedream 5.5, Nano Banana 2.1 and Nano Banana 2
+- text to image, and reference images or an image to edit (up to 14)
+- outputs a standard IMAGE batch
+
 ## Install
 
-In ComfyUI Manager, search for "Seedance 2.5 (HaryAI)". Or:
+In ComfyUI Manager choose **Install via Git URL** and paste `https://github.com/haryai-com/seedance-comfyui`. Or:
 
 ```sh
 cd ComfyUI/custom_nodes
@@ -25,16 +31,9 @@ No extra Python packages. Restart ComfyUI.
 
 ## Key
 
-Get a key on your [HaryAI account page](https://haryai.com/en/dashboard?utm_source=github&utm_medium=readme&utm_campaign=seedance-comfyui) and start ComfyUI with it in the environment:
+Copy a key from your [HaryAI account page](https://haryai.com/en/dashboard?utm_source=github&utm_medium=readme&utm_campaign=seedance-comfyui) into the node's `api_key` field. It is saved inside the workflow file, so clear it before you share a workflow.
 
-```sh
-export HARYAI_KEY=...
-python main.py
-```
-
-Or paste it into the node's `api_key` field. A key typed there is saved inside the workflow file, so clear it before you share a workflow.
-
-## Inputs
+## Video inputs
 
 | Input | What it does |
 |---|---|
@@ -46,13 +45,24 @@ Or paste it into the node's `api_key` field. A key typed there is saved inside t
 | generate_audio | Sound and speech |
 | seed | Change it to make a new clip from the same inputs. ComfyUI reuses a cached result otherwise. Not sent to the model |
 | first_frame, last_frame | Image to video |
-| reference_images | A batch of up to 4 images. Not together with first and last frame |
+| reference_images | A batch of up to 30 images (Flash: 10). Not together with first and last frame |
 
 The clip is also saved to `ComfyUI/output/haryai/<task id>.mp4`.
 
+## Image inputs
+
+| Input | What it does |
+|---|---|
+| prompt | What to draw, or what to change in the images. Refer to them as Image 1, Image 2 |
+| model | Seedream 5.5, Nano Banana 2.1, Nano Banana 2 |
+| size | Seedream: 1K, 1.5K, 2K. Nano Banana: 1K, 2K, 4K |
+| ratio | 1:1, 3:4, 4:3, 9:16, 16:9, 2:3, 3:2, 21:9 |
+| count | 1 to 4 images (Seedream; Nano Banana makes one) |
+| images | Reference images or the image to edit, a batch of up to 14 |
+
 ## Cost
 
-Paid per second of video from your HaryAI balance: Seedance 2.5 at 720p is $0.203 a second, Seedance 2.5 Flash at 480p is $0.059. A failed or moderated task is refunded. All prices: [Seedance API pricing](https://haryai.com/en/seedance-api-pricing?utm_source=github&utm_medium=readme&utm_campaign=seedance-comfyui).
+From your HaryAI balance. Video per second: Seedance 2.5 at 720p $0.203, Seedance 2.5 Flash at 480p $0.059. Images: Seedream 5.5 1K $0.016, Nano Banana 2.1 1K $0.0168. A failed or moderated request is not charged. All prices: [pricing](https://haryai.com/en/pricing?utm_source=github&utm_medium=readme&utm_campaign=seedance-comfyui).
 
 ## Related
 
@@ -60,6 +70,6 @@ Paid per second of video from your HaryAI balance: Seedance 2.5 at 720p is $0.20
 - [seedance-skill](https://github.com/haryai-com/seedance-skill): Seedance 2.5 as a Claude Code and Codex skill
 - [n8n-nodes-haryai](https://github.com/haryai-com/n8n-nodes-haryai): the same in n8n (npm `n8n-nodes-haryai`)
 - [nano-banana-api](https://github.com/haryai-com/nano-banana-api): Nano Banana 2.1 and 2 through the OpenAI images API or Gemini's own format
-- API reference: [docs/video.md](https://haryai.com/docs/video.md)
+- API reference: [docs/video.md](https://haryai.com/docs/video.md), [docs/image.md](https://haryai.com/docs/image.md)
 
-MIT. Prices as of 2026-11-26.
+MIT. Prices as of 2026-11-27.
