@@ -72,4 +72,4 @@ From your HaryAI balance. Video per second: Seedance 2.5 at 720p $0.203, Seedanc
 - [nano-banana-api](https://github.com/haryai-com/nano-banana-api): Nano Banana 2.1 and 2 through the OpenAI images API or Gemini's own format
 - API reference: [docs/video.md](https://haryai.com/docs/video.md), [docs/image.md](https://haryai.com/docs/image.md)
 
-MIT. Prices as of 2026-11-27.
+MIT. Prices as of 2026-11-28.

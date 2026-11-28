@@ -1,7 +1,7 @@
 [project]
 name = "seedance-comfyui"
 description = "Seedance 2.5 video and Seedream 5.5 / Nano Banana images in ComfyUI through HaryAI: text to video, first and last frame, reference images, sound; text to image and edits. No BytePlus or Google account needed."
-version = "0.3.0"
+version = "0.3.1"
 license = { file = "LICENSE" }
 dependencies = []
 

@@ -72,4 +72,4 @@ git clone https://github.com/haryai-com/seedance-comfyui
 - [nano-banana-api](https://github.com/haryai-com/nano-banana-api)：用 OpenAI 图片接口或 Gemini 原生格式调 Nano Banana 2.1 和 2
 - 接口文档：[docs/video.md](https://haryai.com/docs/video.md)、[docs/image.md](https://haryai.com/docs/image.md)
 
-MIT 许可。价格截至 2026-11-27。
+MIT 许可。价格截至 2026-11-28。

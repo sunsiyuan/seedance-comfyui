@@ -22,13 +22,14 @@ import folder_paths
 
 API = "https://api.haryai.com"
 VIDEO_BASE = API + "/api/v3"
-# The -unlock names are the same models with fewer content limits, at a higher
-# price (https://haryai.com/en/seedance-api-pricing).
+# The Unlocked models (dreamina) have fewer content limits than the doubao
+# ones, at a higher price (https://haryai.com/en/seedance-api-pricing). The
+# labels stay as they were: saved workflows store them.
 MODELS = {
-    "Seedance 2.5": "dreamina-seedance-2-5-260628",
-    "Seedance 2.5 Flash": "dreamina-seedance-2-5-flash-261115",
-    "Seedance 2.5 Unlocked (fewer content limits)": "dreamina-seedance-2-5-260628-unlock",
-    "Seedance 2.5 Flash Unlocked (fewer content limits)": "dreamina-seedance-2-5-flash-261115-unlock",
+    "Seedance 2.5": "doubao-seedance-2-5-260628",
+    "Seedance 2.5 Flash": "doubao-seedance-2-5-flash-261115",
+    "Seedance 2.5 Unlocked (fewer content limits)": "dreamina-seedance-2-5-260628",
+    "Seedance 2.5 Flash Unlocked (fewer content limits)": "dreamina-seedance-2-5-flash-261115",
 }
 RESOLUTIONS = {name: ["480p", "720p"] if "Flash" in name else ["480p", "720p", "1080p"] for name in MODELS}
 # Reference images per request (Volcengine Ark, "创建视频生成任务").
